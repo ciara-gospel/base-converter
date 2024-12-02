@@ -1,7 +1,7 @@
 // index.js
 
 const Input = document.getElementById('enter')
-const select = document.getElementById('num')
+const select = document.getElementById('numb')
 const button = document.getElementById('basebutton')
 const paragrah = document.getElementById('result')
 const restartButton = document.getElementById('restartbutton')
