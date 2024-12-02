@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="main">
         <div class="first-part">
             <h1>Base Converter.</h1>
-            <div class="second-part">
-                <span>Number</span>
-                <input type="number" id="enetr" class="input" placeholder="enter a number" >
+            </div>
+            <div class="both">
+            <div class="base">
+                <p>Number</p>
+                <input type="number" id="enter" class="input" placeholder="enter a number" >
             </div>
             <div class="base">
-                <span>From Base</span>
-                <input type="number" id="enetr" class="input" placeholder="enter your from base" >
-            </div>
-            <div class="third">
-                <span>To Base</span>
-                <input type="number" id="enetr" class="input" placeholder="enter your new base" >
+                <p>Base</p>
+                <select name="num" id="numb">
+                    <option value="2">Binary</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">HexaDecimal</option>
+                </select>
             </div>
         </div>
-        <button>CONVERT</button>
+       <div class="but">
+        <p id="convert"></p>
+        <button id="basebutton">CONVERT</button>
+        <p id="result"></p>
+        <button id="restartbutton" style="display: none;">Play again</button>
+    </div>
     </div>
     <script src="script/index.js"></script>
 </body>
