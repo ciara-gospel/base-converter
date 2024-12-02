@@ -4,7 +4,7 @@ const Input = document.getElementById('enter')
 const select = document.getElementById('numb')
 const button = document.getElementById('basebutton')
 const paragrah = document.getElementById('result')
-//const restartButton = document.getElementById('restartbutton')
+// const restartButton = document.getElementById('restartbutton')
 
 button.addEventListener('click', () => {
   const numberr = parseInt(Input.value, 10)
@@ -18,5 +18,4 @@ button.addEventListener('click', () => {
   const convertNum = numberr.toString(secondNumber)
 
   paragrah.textContent = `${numberr} to base ${secondNumber} is ${convertNum}`
-
 })
