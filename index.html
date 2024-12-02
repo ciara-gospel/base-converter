@@ -17,25 +17,21 @@
                 <input type="number" id="enter" class="input" placeholder="enter a number" >
             </div>
             <div class="base">
-                <p>From Base</p>
-                <select name="Converter" id="converter">
-                    <option value="base 2">Binary</option>
-                    <option value="base 8">Octal</option>
-                    <option value="base 10">Decimal</option>
-                    <option value="base 16">HexaDecimal</option>
-                    </select> br
-            </div>
-            <div class="base">
-                <p>To Base</p>
-                <select name="num" id="num"><option value="base 2">Binary</option>
-                    <option value="base 2">Binary</option>
-                    <option value="base 8">Octal</option>
-                    <option value="base 10">Decimal</option>
-                    <option value="base 16">HexaDecimal</option>
-                    </select> br
+                <p>Base</p>
+                <select name="num" id="num">
+                    <option value="2">Binary</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">HexaDecimal</option>
+                    </select>
             </div>
         </div>
-       <div class="but"><button>CONVERT</button></div>
+       <div class="but">
+        <p id="convert"></p>
+        <button id="basebutton">CONVERT</button>
+        <p id="result"></p>
+        <button id="restartbutton" style="display: none;">Play again</button>
+    </div>
     </div>
     <script src="script/index.js"></script>
 </body>
